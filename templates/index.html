@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Recommendations Dashboard</title>
+    <title>Tom's Movie Recommendations</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
+    <div class="search-container">
+        <h1>Tom's Movie Recommendations</h1>
+        <input type="text" id="searchInput" placeholder="Search for movies...">
+        <button id="searchButton">Search</button>
+    </div>
+
     <div class="container">
-        <h1>Popular Movies</h1>
         <div class="movies-grid" id="moviesGrid">
             <!-- Movie posters will be dynamically loaded here -->
         </div>
